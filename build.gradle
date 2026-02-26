@@ -91,8 +91,8 @@ tasks.register("jarAndroid"){
     dependsOn tasks.named("distJar")
 }
 
-// Keep a copy in workspace root "构建/" (mod name + version), like other mods in this workspace.
-def buildOutDir = new File(rootDir.parentFile, "构建")
+// Keep a copy in workspace root "构建/<mod-name>/" (mod name + version), like other mods in this workspace.
+def buildOutDir = new File(rootDir.parentFile, "构建/${modInternalName}")
 
 tasks.register("copyZipToBuildDir", Copy){
     doNotTrackState("Copies into workspace build folder for convenience.")
