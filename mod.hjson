@@ -16,6 +16,9 @@ hidden: true
 # your name
 author: "(local)"
 
+# backing repository
+repo: Wind-DeterMination-backup/uuidManager
+
 # the mod description as seen in the mod dialog
 description: "
 Client-side UUID/UID manager.
